@@ -1,0 +1,56 @@
+h1 {
+  text-transform: capitalize;
+  color: #4D4D4D;
+  text-align: center;
+  margin-top: 50px;
+}
+
+table {
+  width: max-content;
+  margin: 40px auto;
+  text-align: center;
+}
+
+th {
+  text-transform: capitalize;
+}
+
+th, td {
+  padding: 10px 30px;
+}
+
+th {
+  color: #4D4D4D;
+}
+
+td {
+  color: #475569;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+p {
+  font-size: 0.75em;
+  text-align: center;
+  line-height: 1.8;
+  color: #64748b;
+}
+
+a {
+  text-decoration: none;
+  color: #4D4D4D;
+}
+
+.copyright {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.65em;
+}
+
+.fa-heart {
+  color: #f43f5e;
+}
