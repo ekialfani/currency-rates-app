@@ -22,13 +22,6 @@ function CurrencyRates() {
           buyingPrice={buyingPrice}
           sellingPrice={sellingPrice}
         />
-        <p>Rates are based from 1 USD.</p>
-        <p>This application uses <a href="https://currencyfreaks.com/" target="_blink" rel="noreferrer">CurrencyFreaks</a> API.</p>
-        <p className="copyright">
-          Developed by
-          <i className="fa fa-heart" aria-hidden="true"></i>
-          <a href="#">ekialfani.</a>
-        </p>
       </main>
     );
   }
