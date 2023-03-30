@@ -13,7 +13,7 @@ function CurrencyRatesTable(props) {
       </thead>
       <tbody>
       {currencies.map((currency, index) => (
-        <tr>
+        <tr key={index}>
           <td>{currency}</td>
           <td>{buyingPrice[index][currency]}</td>
           <td>{exchangeRate[index][currency]}</td>

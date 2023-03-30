@@ -2,6 +2,7 @@
 import './styles/App.css';
 import useCurrencies from './utils/currencies.hooks';
 import CurrencyRatesTable from './components/currency.rates.table';
+import Header from './components/header';
 
 function isDataCurrencyExist(currencies, exchangeRate, buyingPrice, sellingPrice) {
   return Boolean(
@@ -17,8 +18,8 @@ function App() {
 
   if (isDataCurrencyExist(currencies, exchangeRate, buyingPrice, sellingPrice)) {
     return (
-      <div>
-        <h1>Currency Rates App</h1>
+      <>
+        <Header />
         <CurrencyRatesTable
           currencies={currencies}
           exchangeRate={exchangeRate}
@@ -29,10 +30,10 @@ function App() {
         <p>This application uses <a href="https://currencyfreaks.com/" target="_blink" rel="noreferrer">CurrencyFreaks</a> API.</p>
         <p className="copyright">
           Developed by
-          <i class="fa fa-heart" aria-hidden="true"></i>
+          <i className="fa fa-heart" aria-hidden="true"></i>
           <a href="#">ekialfani.</a>
         </p>
-      </div>
+      </>
     );
   }
 
